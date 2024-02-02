@@ -5,22 +5,22 @@ import Footer from "@/Components/Footer.vue";
 import Spinner from "@/Components/Spinner.vue";
 import SignIn from "@/Components/Auth/SignIn.vue";
 import SignUp from "@/Components/Auth/SignUp.vue";
-onMounted(() => {
-    // Remove preloader after 2 seconds
-    setTimeout(() => {
-        const preloader = document.querySelector(".page-loading");
+// onMounted(() => {
+//     // Remove preloader after 2 seconds
+//     setTimeout(() => {
+//         const preloader = document.querySelector(".page-loading");
 
-        if (preloader) {
-            preloader.classList.remove("active");
-            preloader.remove();
-        }
-    }, 2000);
-});
+//         if (preloader) {
+//             preloader.classList.remove("active");
+//             preloader.remove();
+//         }
+//     }, 2000);
+// });
 </script>
 
 <template>
     <div>
-        <Spinner />
+        <!-- <Spinner /> -->
 
         <main class="page-wrapper">
             <Navbar />
