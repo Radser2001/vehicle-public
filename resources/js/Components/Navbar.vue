@@ -25,13 +25,27 @@ import { Link } from "@inertiajs/vue3";
                 aria-expanded="false"
                 aria-label="Toggle navigation"
             >
-                <span class="navbar-toggler-icon"></span></button
-            ><a
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <Link
+                v-if="$page.props.auth.user"
+                class="btn btn-link btn-light btn-sm d-none d-lg-block order-lg-3"
+                :href="route('logout')"
+                method="post"
+                as="button"
+                data-bs-toggle="modal"
+                ><i class="fi-user me-2"></i>Logout</Link
+            >
+
+            <Link
+                v-else
                 class="btn btn-link btn-light btn-sm d-none d-lg-block order-lg-3"
                 href="#signin-modal"
                 data-bs-toggle="modal"
-                ><i class="fi-user me-2"></i>Sign in</a
+                ><i class="fi-user me-2"></i>Sign in</Link
             >
+
             <!-- <a
                 class="btn btn-primary btn-sm ms-2 order-lg-3"
                 href="car-finder-sell-car.html"

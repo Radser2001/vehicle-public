@@ -1,7 +1,8 @@
 @import url("../src/vendor/simplebar/dist/simplebar.min.css");
 @import url("../src/vendor/tiny-slider/dist/tiny-slider.css");
+@import url("../src/vendor/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.css");
+@import url("../src/vendor/filepond/dist/filepond.min.css");
 @import url("../src/css/theme.min.css");
-
 
 .page-loading {
     position: fixed;
@@ -11,8 +12,8 @@
     left: 0;
     width: 100%;
     height: 100%;
-    -webkit-transition: all .4s .2s ease-in-out;
-    transition: all .4s .2s ease-in-out;
+    -webkit-transition: all 0.4s 0.2s ease-in-out;
+    transition: all 0.4s 0.2s ease-in-out;
     background-color: #1f1b2d;
     opacity: 0;
     visibility: hidden;
@@ -32,34 +33,33 @@
     text-align: center;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
-    -webkit-transition: opacity .2s ease-in-out;
-    transition: opacity .2s ease-in-out;
+    -webkit-transition: opacity 0.2s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
     opacity: 0;
 }
 
-.page-loading.active>.page-loading-inner {
+.page-loading.active > .page-loading-inner {
     opacity: 1;
 }
 
-.page-loading-inner>span {
+.page-loading-inner > span {
     display: block;
     font-size: 1rem;
     font-weight: normal;
     color: #fff;
-    ;
 }
 
 .page-spinner {
     display: inline-block;
     width: 2.75rem;
     height: 2.75rem;
-    margin-bottom: .75rem;
+    margin-bottom: 0.75rem;
     vertical-align: text-bottom;
-    border: .15em solid #9691a4;
+    border: 0.15em solid #9691a4;
     border-right-color: transparent;
     border-radius: 50%;
-    -webkit-animation: spinner .75s linear infinite;
-    animation: spinner .75s linear infinite;
+    -webkit-animation: spinner 0.75s linear infinite;
+    animation: spinner 0.75s linear infinite;
 }
 
 @-webkit-keyframes spinner {

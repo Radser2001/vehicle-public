@@ -33,6 +33,7 @@ import SignUp from "@/Components/Auth/SignUp.vue";
             <slot name="view" />
             <slot name="about" />
             <slot name="contact" />
+            <slot name="profile" />
             <!-- <a class="btn-scroll-top" href="#top" data-scroll
                 ><span class="btn-scroll-top-tooltip text-muted fs-sm me-2"
                     >Top</span

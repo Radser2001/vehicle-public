@@ -1,6 +1,14 @@
 import "./bootstrap";
 import "../css/app.css";
 import "../src/vendor/bootstrap/dist/js/bootstrap.bundle.min.js";
+import "../src/vendor/simplebar/dist/simplebar.min.js";
+import "../src/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js";
+import "../src/vendor/filepond-plugin-file-validate-type/dist/filepond-plugin-file-validate-type.min.js";
+import "../src/vendor/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.js";
+import "../src/vendor/filepond-plugin-image-crop/dist/filepond-plugin-image-crop.min.js";
+import "../src/vendor/filepond-plugin-image-resize/dist/filepond-plugin-image-resize.min.js";
+import "../src/vendor/filepond-plugin-image-transform/dist/filepond-plugin-image-transform.min.js";
+import "../src/vendor/filepond/dist/filepond.min.js";
 import "../src/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js";
 import "../src/vendor/tiny-slider/dist/min/tiny-slider.js";
 import "../src/vendor/jarallax/dist/jarallax.min.js";
