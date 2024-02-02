@@ -3,6 +3,8 @@ import { onMounted } from "vue";
 import Navbar from "@/Components/Navbar.vue";
 import Footer from "@/Components/Footer.vue";
 import Spinner from "@/Components/Spinner.vue";
+import SignIn from "@/Components/Auth/SignIn.vue";
+import SignUp from "@/Components/Auth/SignUp.vue";
 onMounted(() => {
     // Remove preloader after 2 seconds
     setTimeout(() => {
@@ -22,12 +24,17 @@ onMounted(() => {
 
         <main class="page-wrapper">
             <Navbar />
+            <!-- Sign In Modal-->
+            <SignIn />
+            <!-- Sign Up Modal-->
+            <SignUp />
             <slot name="dashboard" />
-            <a class="btn-scroll-top" href="#top" data-scroll
+            <slot name="vehicles" />
+            <!-- <a class="btn-scroll-top" href="#top" data-scroll
                 ><span class="btn-scroll-top-tooltip text-muted fs-sm me-2"
                     >Top</span
                 ><i class="btn-scroll-top-icon fi-chevron-up"> </i
-            ></a>
+            ></a> -->
             <Footer />
         </main>
 

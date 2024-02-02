@@ -1,3 +1,7 @@
+<script setup>
+import { Link } from "@inertiajs/vue3";
+</script>
+
 <template>
     <!-- Navbar-->
     <header
@@ -40,11 +44,13 @@
                 >
                     <!-- Menu items-->
                     <li class="nav-item active">
-                        <a class="nav-link" href="car-finder-home.html">Home</a>
+                        <Link class="nav-link" :href="route('index')"
+                            >Home</Link
+                        >
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="car-finder-home.html"
-                            >Vehicles</a
+                        <Link class="nav-link" :href="route('vehicles.index')"
+                            >Vehicles</Link
                         >
                     </li>
                     <li class="nav-item">

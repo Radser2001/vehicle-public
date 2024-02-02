@@ -16,11 +16,7 @@ import SignUp from "@/Components/Auth/SignUp.vue";
     <AppLayout>
         <template #dashboard>
             <main class="page-wrapper">
-                <!-- Sign In Modal-->
-                <SignIn />
-                <!-- Sign Up Modal-->
-
-                <SignUp />
+               
                 <!-- Page content-->
                 <Hero />
 
