@@ -1,11 +1,12 @@
 <script setup>
-import Checkbox from '@/Components/Checkbox.vue';
-import GuestLayout from '@/Layouts/GuestLayout.vue';
-import InputError from '@/Components/InputError.vue';
-import InputLabel from '@/Components/InputLabel.vue';
-import PrimaryButton from '@/Components/PrimaryButton.vue';
-import TextInput from '@/Components/TextInput.vue';
-import { Head, Link, useForm } from '@inertiajs/vue3';
+import Checkbox from "@/Components/Checkbox.vue";
+import GuestLayout from "@/Layouts/GuestLayout.vue";
+import InputError from "@/Components/InputError.vue";
+import InputLabel from "@/Components/InputLabel.vue";
+import PrimaryButton from "@/Components/PrimaryButton.vue";
+import TextInput from "@/Components/TextInput.vue";
+import { Head, Link, useForm } from "@inertiajs/vue3";
+import AppLayout from "@/Layouts/AppLayout.vue";
 
 defineProps({
     canResetPassword: {
@@ -17,78 +18,141 @@ defineProps({
 });
 
 const form = useForm({
-    email: '',
-    password: '',
+    email: "",
+    password: "",
     remember: false,
 });
 
 const submit = () => {
-    form.post(route('login'), {
-        onFinish: () => form.reset('password'),
+    form.post(route("login"), {
+        onFinish: () => form.reset("password"),
     });
 };
 </script>
 
 <template>
-    <GuestLayout>
-        <Head title="Log in" />
-
-        <div v-if="status" class="mb-4 font-medium text-sm text-green-600">
-            {{ status }}
-        </div>
-
-        <form @submit.prevent="submit">
-            <div>
-                <InputLabel for="email" value="Email" />
-
-                <TextInput
-                    id="email"
-                    type="email"
-                    class="mt-1 block w-full"
-                    v-model="form.email"
-                    required
-                    autofocus
-                    autocomplete="username"
-                />
-
-                <InputError class="mt-2" :message="form.errors.email" />
-            </div>
-
-            <div class="mt-4">
-                <InputLabel for="password" value="Password" />
-
-                <TextInput
-                    id="password"
-                    type="password"
-                    class="mt-1 block w-full"
-                    v-model="form.password"
-                    required
-                    autocomplete="current-password"
-                />
-
-                <InputError class="mt-2" :message="form.errors.password" />
-            </div>
-
-            <div class="block mt-4">
-                <label class="flex items-center">
-                    <Checkbox name="remember" v-model:checked="form.remember" />
-                    <span class="ms-2 text-sm text-gray-600">Remember me</span>
-                </label>
-            </div>
-
-            <div class="flex items-center justify-end mt-4">
-                <Link
-                    v-if="canResetPassword"
-                    :href="route('password.request')"
-                    class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+    <AppLayout>
+        <template #signIn>
+            <div
+                class="mt-5"
+                id="signin-modal"
+                tabindex="-1"
+                aria-hidden="true"
+            >
+                <div
+                    class="modal-dialog modal-lg modal-dialog-centered p-2 my-0 mx-auto"
+                    style="max-width: 950px"
                 >
-                    Forgot your password?
-                </Link>
-
-                <PrimaryButton class="ms-4" :class="{ 'opacity-25': form.processing }" :disabled="form.processing">
-                    Log in
-                </PrimaryButton>
+                    <div class="modal-content bg-dark border-light">
+                        <div class="modal-body px-0 py-2 py-sm-0">
+                            <div class="row mx-0 align-items-center">
+                                <div
+                                    class="col-md-6 border-end-md border-light p-4 p-sm-5"
+                                >
+                                    <h2 class="h3 text-light mb-4 mb-sm-5">
+                                        Hey there!<br />Welcome back.
+                                    </h2>
+                                    <img
+                                        class="d-block mx-auto"
+                                        src="../../../../public/img/signin-modal/signin-dark.svg"
+                                        width="344"
+                                        alt="Illustartion"
+                                    />
+                                    <div class="text-light mt-4 mt-sm-5">
+                                        <span class="opacity-60"
+                                            >Don't have an account? </span
+                                        ><Link
+                                            class="text-light"
+                                            :href="route('register')"
+                                            >Sign Up here</Link
+                                        >
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-md-6 px-4 pt-2 pb-4 px-sm-5 pb-sm-5 pt-md-5"
+                                >
+                                    <form @submit.prevent="submit">
+                                        <div class="mb-4">
+                                            <label
+                                                class="form-label text-light mb-2"
+                                                for="signin-email"
+                                                >Email address</label
+                                            >
+                                            <input
+                                                class="form-control form-control-light"
+                                                type="email"
+                                                id="signin-email"
+                                                placeholder="Enter your email"
+                                                required
+                                                v-model="form.email"
+                                            />
+                                            <InputError
+                                                class="mt-2"
+                                                :message="form.errors.email"
+                                            />
+                                        </div>
+                                        <div class="mb-4">
+                                            <div
+                                                class="d-flex align-items-center justify-content-between mb-2"
+                                            >
+                                                <label
+                                                    class="form-label text-light mb-0"
+                                                    for="signin-password"
+                                                    >Password</label
+                                                ><Link
+                                                    v-if="canResetPassword"
+                                                    :href="
+                                                        route(
+                                                            'password.request'
+                                                        )
+                                                    "
+                                                    class="fs-sm text-light"
+                                                    href="#"
+                                                    >Forgot password?</Link
+                                                >
+                                            </div>
+                                            <div class="password-toggle">
+                                                <input
+                                                    class="form-control form-control-light"
+                                                    type="password"
+                                                    v-model="form.password"
+                                                    id="signin-password"
+                                                    placeholder="Enter password"
+                                                    required
+                                                />
+                                                <InputError
+                                                    class="mt-2"
+                                                    :message="
+                                                        form.errors.password
+                                                    "
+                                                />
+                                                <label
+                                                    class="password-toggle-btn"
+                                                    aria-label="Show/hide password"
+                                                >
+                                                    <input
+                                                        class="password-toggle-check"
+                                                        type="checkbox"
+                                                    /><span
+                                                        class="password-toggle-indicator"
+                                                    ></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <button
+                                            :disabled="form.processing"
+                                            class="btn btn-primary btn-lg w-100"
+                                            type="submit"
+                                        >
+                                            Sign in
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </form>
-    </GuestLayout>
+        </template>
+    </AppLayout>
 </template>

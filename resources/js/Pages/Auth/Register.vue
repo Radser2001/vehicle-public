@@ -1,103 +1,223 @@
 <script setup>
-import GuestLayout from '@/Layouts/GuestLayout.vue';
-import InputError from '@/Components/InputError.vue';
-import InputLabel from '@/Components/InputLabel.vue';
-import PrimaryButton from '@/Components/PrimaryButton.vue';
-import TextInput from '@/Components/TextInput.vue';
-import { Head, Link, useForm } from '@inertiajs/vue3';
+import GuestLayout from "@/Layouts/GuestLayout.vue";
+import InputError from "@/Components/InputError.vue";
+import InputLabel from "@/Components/InputLabel.vue";
+import PrimaryButton from "@/Components/PrimaryButton.vue";
+import TextInput from "@/Components/TextInput.vue";
+import { Head, Link, useForm } from "@inertiajs/vue3";
+import AppLayout from "@/Layouts/AppLayout.vue";
 
 const form = useForm({
-    name: '',
-    email: '',
-    password: '',
-    password_confirmation: '',
+    name: "",
+    email: "",
+    password: "",
+    password_confirmation: "",
 });
 
 const submit = () => {
-    form.post(route('register'), {
-        onFinish: () => form.reset('password', 'password_confirmation'),
+    form.post(route("register"), {
+        onFinish: () => form.reset("password", "password_confirmation"),
     });
 };
 </script>
 
 <template>
-    <GuestLayout>
-        <Head title="Register" />
-
-        <form @submit.prevent="submit">
-            <div>
-                <InputLabel for="name" value="Name" />
-
-                <TextInput
-                    id="name"
-                    type="text"
-                    class="mt-1 block w-full"
-                    v-model="form.name"
-                    required
-                    autofocus
-                    autocomplete="name"
-                />
-
-                <InputError class="mt-2" :message="form.errors.name" />
-            </div>
-
-            <div class="mt-4">
-                <InputLabel for="email" value="Email" />
-
-                <TextInput
-                    id="email"
-                    type="email"
-                    class="mt-1 block w-full"
-                    v-model="form.email"
-                    required
-                    autocomplete="username"
-                />
-
-                <InputError class="mt-2" :message="form.errors.email" />
-            </div>
-
-            <div class="mt-4">
-                <InputLabel for="password" value="Password" />
-
-                <TextInput
-                    id="password"
-                    type="password"
-                    class="mt-1 block w-full"
-                    v-model="form.password"
-                    required
-                    autocomplete="new-password"
-                />
-
-                <InputError class="mt-2" :message="form.errors.password" />
-            </div>
-
-            <div class="mt-4">
-                <InputLabel for="password_confirmation" value="Confirm Password" />
-
-                <TextInput
-                    id="password_confirmation"
-                    type="password"
-                    class="mt-1 block w-full"
-                    v-model="form.password_confirmation"
-                    required
-                    autocomplete="new-password"
-                />
-
-                <InputError class="mt-2" :message="form.errors.password_confirmation" />
-            </div>
-
-            <div class="flex items-center justify-end mt-4">
-                <Link
-                    :href="route('login')"
-                    class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+    <AppLayout>
+        <template #register>
+            <div
+                class="mt-5"
+                id="signup-modal"
+                tabindex="-1"
+                aria-hidden="true"
+            >
+                <div
+                    class="modal-dialog modal-lg modal-dialog-centered p-2 my-0 mx-auto"
+                    style="max-width: 950px"
                 >
-                    Already registered?
-                </Link>
+                    <div class="modal-content bg-dark border-light">
+                        <div class="modal-body px-0 py-2 py-sm-0">
+                            <div class="row mx-0 align-items-center">
+                                <div
+                                    class="col-md-6 border-end-md border-light p-4 p-sm-5"
+                                >
+                                    <h2 class="h3 text-light mb-4 mb-sm-5">
+                                        Join Finder.<br />Get premium benefits:
+                                    </h2>
+                                    <ul class="list-unstyled mb-4 mb-sm-5">
+                                        <li class="d-flex mb-2">
+                                            <i
+                                                class="fi-check-circle text-primary mt-1 me-2"
+                                            ></i
+                                            ><span class="text-light"
+                                                >Add and promote your
+                                                listings</span
+                                            >
+                                        </li>
+                                        <li class="d-flex mb-2">
+                                            <i
+                                                class="fi-check-circle text-primary mt-1 me-2"
+                                            ></i
+                                            ><span class="text-light"
+                                                >Easily manage your
+                                                wishlist</span
+                                            >
+                                        </li>
+                                        <li class="d-flex mb-0">
+                                            <i
+                                                class="fi-check-circle text-primary mt-1 me-2"
+                                            ></i
+                                            ><span class="text-light"
+                                                >Leave reviews</span
+                                            >
+                                        </li>
+                                    </ul>
+                                    <img
+                                        class="d-block mx-auto"
+                                        src="../../../../public/img/signin-modal/signup-dark.svg"
+                                        width="344"
+                                        alt="Illustartion"
+                                    />
+                                    <div class="text-light mt-sm-4 pt-md-3">
+                                        <span class="opacity-60"
+                                            >Already have an account? </span
+                                        ><Link
+                                            class="text-light"
+                                            :href="route('login')"
+                                            >Sign in</Link
+                                        >
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-md-6 px-4 pt-2 pb-4 px-sm-5 pb-sm-5 pt-md-5"
+                                >
+                                    <form @submit.prevent="submit">
+                                        <div class="mb-4">
+                                            <label
+                                                class="form-label text-light"
+                                                for="signup-name"
+                                                >Full name</label
+                                            >
+                                            <input
+                                                class="form-control form-control-light"
+                                                type="text"
+                                                v-model="form.name"
+                                                id="signup-name"
+                                                placeholder="Enter your full name"
+                                                required
+                                            />
+                                            <InputError
+                                                class="mt-2"
+                                                :message="form.errors.name"
+                                            />
+                                        </div>
+                                        <div class="mb-4">
+                                            <label
+                                                class="form-label text-light"
+                                                for="signup-email"
+                                                >Email address</label
+                                            >
+                                            <input
+                                                class="form-control form-control-light"
+                                                type="email"
+                                                id="signup-email"
+                                                v-model="form.email"
+                                                placeholder="Enter your email"
+                                                required
+                                            />
+                                            <InputError
+                                                class="mt-2"
+                                                :message="form.errors.email"
+                                            />
+                                        </div>
+                                        <div class="mb-4">
+                                            <label
+                                                class="form-label text-light"
+                                                for="signup-password"
+                                                >Password
+                                                <span class="fs-sm opacity-50"
+                                                    >min. 8 char</span
+                                                ></label
+                                            >
+                                            <div class="password-toggle">
+                                                <input
+                                                    class="form-control form-control-light"
+                                                    type="password"
+                                                    id="signup-password"
+                                                    v-model="form.password"
+                                                    minlength="8"
+                                                    required
+                                                />
+                                                <InputError
+                                                    class="mt-2"
+                                                    :message="
+                                                        form.errors.password
+                                                    "
+                                                />
+                                                <label
+                                                    class="password-toggle-btn"
+                                                    aria-label="Show/hide password"
+                                                >
+                                                    <input
+                                                        class="password-toggle-check"
+                                                        type="checkbox"
+                                                    /><span
+                                                        class="password-toggle-indicator"
+                                                    ></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="mb-4">
+                                            <label
+                                                class="form-label text-light"
+                                                for="signup-password-confirm"
+                                                >Confirm password</label
+                                            >
+                                            <div class="password-toggle">
+                                                <input
+                                                    class="form-control form-control-light"
+                                                    type="password"
+                                                    id="signup-password-confirm"
+                                                    v-model="
+                                                        form.password_confirmation
+                                                    "
+                                                    minlength="8"
+                                                    required
+                                                />
+                                                <InputError
+                                                    class="mt-2"
+                                                    :message="
+                                                        form.errors
+                                                            .password_confirmation
+                                                    "
+                                                />
+                                                <label
+                                                    class="password-toggle-btn"
+                                                    aria-label="Show/hide password"
+                                                >
+                                                    <input
+                                                        class="password-toggle-check"
+                                                        type="checkbox"
+                                                    /><span
+                                                        class="password-toggle-indicator"
+                                                    ></span>
+                                                </label>
+                                            </div>
+                                        </div>
 
-                <PrimaryButton class="ms-4" :class="{ 'opacity-25': form.processing }" :disabled="form.processing">
-                    Register
-                </PrimaryButton>
+                                        <button
+                                            class="btn btn-primary btn-lg w-100"
+                                            type="submit"
+                                            :disabled="form.processing"
+                                        >
+                                            Sign up
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </form>
-    </GuestLayout>
+        </template>
+    </AppLayout>
 </template>
