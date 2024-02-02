@@ -22,7 +22,7 @@
                 <div class="col-lg-8 col-md-7 pt-md-5">
                     <img
                         class="d-block mt-4 ms-auto"
-                        src="../../../../public/img/car-finder/home/hero-img.png"
+                        src="../../../../../public/img/car-finder/home/hero-img.png"
                         width="800"
                         alt="Car"
                     />

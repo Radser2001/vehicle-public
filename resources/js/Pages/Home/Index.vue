@@ -1,22 +1,19 @@
 <script setup>
 import AppLayout from "@/Layouts/AppLayout.vue";
-import Hero from "@/Components/Home/Hero.vue";
-import CarBodyTypes from "@/Components/Home/CarBodyTypes.vue";
-import TopOffers from "@/Components/Home/TopOffers.vue";
-import Brands from "@/Components/Home/Brands.vue";
-import Features from "@/Components/Home/Features.vue";
-import Latest from "@/Components/Home/Latest.vue";
-import MobileApp from "@/Components/Home/MobileApp.vue";
-import Blog from "@/Components/Home/Blog.vue";
-import SignIn from "@/Components/Auth/SignIn.vue";
-import SignUp from "@/Components/Auth/SignUp.vue";
+import Hero from "@/Pages/Home/Components/Hero.vue";
+import CarBodyTypes from "@/Pages/Home/Components/CarBodyTypes.vue";
+import TopOffers from "@/Pages/Home/Components/TopOffers.vue";
+import Brands from "@/Pages/Home/Components/Brands.vue";
+import Features from "@/Pages/Home/Components/Features.vue";
+import Latest from "@/Pages/Home/Components/Latest.vue";
+import MobileApp from "@/Pages/Home/Components/MobileApp.vue";
+import Blog from "@/Pages/Home/Components/Blog.vue";
 </script>
 
 <template>
     <AppLayout>
         <template #dashboard>
             <main class="page-wrapper">
-               
                 <!-- Page content-->
                 <Hero />
 
@@ -74,7 +71,7 @@ import SignUp from "@/Components/Auth/SignUp.vue";
                                                     href="#"
                                                     ><img
                                                         class="d-block mb-2 mx-auto"
-                                                        src="../../../public/img/car-finder/categories/01.png"
+                                                        src="../../../../public/img/car-finder/categories/01.png"
                                                         width="168"
                                                         alt="Seat Covers"
                                                     />
@@ -88,7 +85,7 @@ import SignUp from "@/Components/Auth/SignUp.vue";
                                                     href="#"
                                                     ><img
                                                         class="d-block mb-2 mx-auto"
-                                                        src="../../../public/img/car-finder/categories/02.png"
+                                                        src="../../../../public/img/car-finder/categories/02.png"
                                                         width="168"
                                                         alt="Tires"
                                                     />
@@ -102,7 +99,7 @@ import SignUp from "@/Components/Auth/SignUp.vue";
                                                     href="#"
                                                     ><img
                                                         class="d-block mb-2 mx-auto"
-                                                        src="../../../public/img/car-finder/categories/03.png"
+                                                        src="../../../../public/img/car-finder/categories/03.png"
                                                         width="168"
                                                         alt="Disks"
                                                     />
@@ -116,7 +113,7 @@ import SignUp from "@/Components/Auth/SignUp.vue";
                                                     href="#"
                                                     ><img
                                                         class="d-block mb-2 mx-auto"
-                                                        src="../../../public/img/car-finder/categories/04.png"
+                                                        src="../../../../public/img/car-finder/categories/04.png"
                                                         width="168"
                                                         alt="Child Seats"
                                                     />
@@ -169,7 +166,7 @@ import SignUp from "@/Components/Auth/SignUp.vue";
                                                     >
                                                         <img
                                                             class="d-block m-sm-2"
-                                                            src="../../../public/img/car-finder/icons/buyers.svg"
+                                                            src="../../../../public/img/car-finder/icons/buyers.svg"
                                                             width="56"
                                                             alt="Vetted buyers"
                                                         />
@@ -186,7 +183,7 @@ import SignUp from "@/Components/Auth/SignUp.vue";
                                                     >
                                                         <img
                                                             class="d-block m-sm-2"
-                                                            src="../../../public/img/car-finder/icons/tools.svg"
+                                                            src="../../../../public/img/car-finder/icons/tools.svg"
                                                             width="56"
                                                             alt="Smart tools"
                                                         />
@@ -203,7 +200,7 @@ import SignUp from "@/Components/Auth/SignUp.vue";
                                                     >
                                                         <img
                                                             class="d-block m-sm-2"
-                                                            src="../../../public/img/car-finder/icons/handshake.svg"
+                                                            src="../../../../public/img/car-finder/icons/handshake.svg"
                                                             width="56"
                                                             alt="Handshake"
                                                         />

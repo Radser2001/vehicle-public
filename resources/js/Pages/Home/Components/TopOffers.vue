@@ -48,10 +48,10 @@
                         </div>
                         <div class="tns-carousel-inner">
                             <img
-                                src="../../../../public/img/car-finder/catalog/17.jpg"
+                                src="../../../../../public/img/car-finder/catalog/17.jpg"
                                 alt="Image"
                             /><img
-                                src="../../../../public/img/car-finder/catalog/17.jpg"
+                                src="../../../../../public/img/car-finder/catalog/17.jpg"
                                 alt="Image"
                             />
                         </div>

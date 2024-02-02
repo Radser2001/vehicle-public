@@ -53,7 +53,7 @@
                                 </button>
                             </div>
                             <img
-                                src="../../../../public/img/car-finder/catalog/04.jpg"
+                                src="../../../../../public/img/car-finder/catalog/04.jpg"
                                 alt="Image"
                             />
                         </div>
@@ -166,7 +166,7 @@
                             </div>
                             <img
 
-                                src="../../../../public/img/car-finder/catalog/08.jpg"
+                                src="../../../../../public/img/car-finder/catalog/08.jpg"
                                 alt="Image"
                             />
                         </div>
@@ -268,7 +268,7 @@
                                 </button>
                             </div>
                             <img
-                                src="../../../../public/img/car-finder/catalog/03.jpg"
+                                src="../../../../../public/img/car-finder/catalog/03.jpg"
                                 alt="Image"
                             />
                         </div>
@@ -370,7 +370,7 @@
                                 </button>
                             </div>
                             <img
-                                src="../../../../public/img/car-finder/catalog/02.jpg"
+                                src="../../../../../public/img/car-finder/catalog/02.jpg"
                                 alt="Image"
                             />
                         </div>

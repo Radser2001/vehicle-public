@@ -21,7 +21,7 @@
                 >
                     <img
                         class="d-block mx-auto mb-3"
-                        src="../../../../public/img/car-finder/icons/sedan.svg"
+                        src="../../../../../public/img/car-finder/icons/sedan.svg"
                         width="160"
                         alt="Sedan"
                     /><a
@@ -38,7 +38,7 @@
                 >
                     <img
                         class="d-block mx-auto mb-3"
-                        src="../../../../public/img/car-finder/icons/suv.svg"
+                        src="../../../../../public/img/car-finder/icons/suv.svg"
                         width="160"
                         alt="SUV"
                     /><a
@@ -55,7 +55,7 @@
                 >
                     <img
                         class="d-block mx-auto mb-3"
-                        src="../../../../public/img/car-finder/icons/wagon.svg"
+                        src="../../../../../public/img/car-finder/icons/wagon.svg"
                         width="160"
                         alt="Wagon"
                     /><a
@@ -72,7 +72,7 @@
                 >
                     <img
                         class="d-block mx-auto mb-3"
-                        src="../../../../public/img/car-finder/icons/crossover.svg"
+                        src="../../../../../public/img/car-finder/icons/crossover.svg"
                         width="160"
                         alt="Crossover"
                     /><a
@@ -89,7 +89,7 @@
                 >
                     <img
                         class="d-block mx-auto mb-3"
-                        src="../../../../public/img/car-finder/icons/coupe.svg"
+                        src="../../../../../public/img/car-finder/icons/coupe.svg"
                         width="160"
                         alt="Coupe"
                     /><a
@@ -106,7 +106,7 @@
                 >
                     <img
                         class="d-block mx-auto mb-3"
-                        src="../../../../public/img/car-finder/icons/pickup.svg"
+                        src="../../../../../public/img/car-finder/icons/pickup.svg"
                         width="160"
                         alt="Pickup"
                     /><a
@@ -123,7 +123,7 @@
                 >
                     <img
                         class="d-block mx-auto mb-3"
-                        src="../../../../public/img/car-finder/icons/sport.svg"
+                        src="../../../../../public/img/car-finder/icons/sport.svg"
                         width="160"
                         alt="Sport Coupe"
                     /><a
@@ -140,7 +140,7 @@
                 >
                     <img
                         class="d-block mx-auto mb-3"
-                        src="../../../../public/img/car-finder/icons/compact.svg"
+                        src="../../../../../public/img/car-finder/icons/compact.svg"
                         width="160"
                         alt="Compact"
                     /><a
@@ -157,7 +157,7 @@
                 >
                     <img
                         class="d-block mx-auto mb-3"
-                        src="../../../../public/img/car-finder/icons/convertible.svg"
+                        src="../../../../../public/img/car-finder/icons/convertible.svg"
                         width="160"
                         alt="Convertible"
                     /><a
@@ -174,7 +174,7 @@
                 >
                     <img
                         class="d-block mx-auto mb-3"
-                        src="../../../../public/img/car-finder/icons/mpv.svg"
+                        src="../../../../../public/img/car-finder/icons/mpv.svg"
                         width="160"
                         alt="Family MPV"
                     /><a
