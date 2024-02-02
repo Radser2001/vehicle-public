@@ -1,3 +1,7 @@
+<script setup>
+import { Link } from "@inertiajs/vue3";
+</script>
+
 <template>
     <footer class="footer bg-faded-light">
         <div class="border-bottom border-light py-4">
@@ -77,23 +81,13 @@
                 <div
                     class="col-lg-2 col-md-3 col-sm-6 offset-xl-1 mb-2 mb-sm-4"
                 >
-                    <h3 class="fs-base text-light">Buying &amp; Selling</h3>
+                    <h3 class="fs-base text-light">Buying</h3>
                     <ul class="list-unstyled fs-sm">
                         <li>
-                            <a class="nav-link-light" href="#">Find a car</a>
-                        </li>
-                        <li>
-                            <a class="nav-link-light" href="#">Sell your car</a>
-                        </li>
-                        <li>
-                            <a class="nav-link-light" href="#">Car dealers</a>
-                        </li>
-                        <li>
-                            <a class="nav-link-light" href="#">Compare cars</a>
-                        </li>
-                        <li>
-                            <a class="nav-link-light" href="#"
-                                >Online car appraisal</a
+                            <Link
+                                class="nav-link-light"
+                                :href="route('vehicles.index')"
+                                >Find a car</Link
                             >
                         </li>
                     </ul>
@@ -102,20 +96,17 @@
                     <h3 class="fs-base text-light">About</h3>
                     <ul class="list-unstyled fs-sm">
                         <li>
-                            <a class="nav-link-light" href="#">About Finder</a>
-                        </li>
-                        <li>
-                            <a class="nav-link-light" href="#">Contact us</a>
-                        </li>
-                        <li>
-                            <a class="nav-link-light" href="#"
-                                >FAQs &amp; support</a
+                            <Link class="nav-link-light" :href="route('about')"
+                                >About Finder</Link
                             >
                         </li>
                         <li>
-                            <a class="nav-link-light" href="#">Mobile app</a>
+                            <Link
+                                class="nav-link-light"
+                                :href="route('contact')"
+                                >Contact us</Link
+                            >
                         </li>
-                        <li><a class="nav-link-light" href="#">Blog</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-2 col-md-3 col-sm-6 mb-2 mb-sm-4">
@@ -123,13 +114,6 @@
                     <ul class="list-unstyled fs-sm">
                         <li>
                             <a class="nav-link-light" href="#">My account</a>
-                        </li>
-                        <li><a class="nav-link-light" href="#">Wishlist</a></li>
-                        <li>
-                            <a class="nav-link-light" href="#">My listings</a>
-                        </li>
-                        <li>
-                            <a class="nav-link-light" href="#">Add listing</a>
                         </li>
                     </ul>
                 </div>

@@ -1,6 +1,6 @@
 <script setup>
 import AppLayout from "@/Layouts/AppLayout.vue";
-import Filters from "./Components/Filters.vue";
+import Filters from "@/Pages/Vehicles/Components/Filters.vue";
 </script>
 
 <template>
