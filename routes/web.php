@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\AboutUsController;
+use App\Http\Controllers\ContactUsController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\VehicleController;
 use Illuminate\Foundation\Application;
@@ -41,5 +43,8 @@ Route::prefix("/vehicles")->group(function () {
     // Route::get('/{vehicle_id}/view', [VehicleController::class, "view"])->name('vehicles.view');
     Route::get('/view', [VehicleController::class, "view"])->name('vehicles.view');
 });
+
+ Route::get('/about', [AboutUsController::class, "index"])->name('about');
+ Route::get('/contact', [ContactUsController::class, "index"])->name('contact');
 
 require __DIR__ . '/auth.php';

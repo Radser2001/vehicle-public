@@ -160,13 +160,13 @@
                             <div
                                 class="bg-size-cover bg-position-center w-100 h-100"
                                 style="
-                                    background-image: url(src/img/car-finder/catalog/09.jpg);
+                                    background-image: url(img/car-finder/catalog/09.jpg);
                                 "
                             ></div>
                             <div
                                 class="bg-size-cover bg-position-center w-100 h-100"
                                 style="
-                                    background-image: url(src/img/car-finder/catalog/09.jpg);
+                                    background-image: url(img/car-finder/catalog/09.jpg);
                                 "
                             ></div>
                         </div>

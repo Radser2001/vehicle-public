@@ -54,13 +54,13 @@ import { Link } from "@inertiajs/vue3";
                         >
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="car-finder-home.html"
-                            >About Us</a
+                        <Link class="nav-link" :href="route('about')"
+                            >About Us</Link
                         >
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="car-finder-home.html"
-                            >Contact Us</a
+                        <Link class="nav-link" :href="route('contact')"
+                            >Contact Us</Link
                         >
                     </li>
 

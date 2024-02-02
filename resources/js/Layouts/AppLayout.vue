@@ -30,6 +30,9 @@ onMounted(() => {
             <SignUp />
             <slot name="dashboard" />
             <slot name="vehicles" />
+            <slot name="view" />
+            <slot name="about" />
+            <slot name="contact" />
             <!-- <a class="btn-scroll-top" href="#top" data-scroll
                 ><span class="btn-scroll-top-tooltip text-muted fs-sm me-2"
                     >Top</span
