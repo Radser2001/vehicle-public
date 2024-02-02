@@ -1,11 +1,11 @@
 import "./bootstrap";
 import "../css/app.css";
-import "../../vendor/bootstrap/dist/js/bootstrap.bundle.min.js";
-import "../../vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js";
-import "../../vendor/tiny-slider/dist/min/tiny-slider.js";
-import "../../vendor/jarallax/dist/jarallax.min.js";
-import "../../vendor/rellax/rellax.min.js";
-import "../../public/assets/js/theme.min.js";
+import "../src/vendor/bootstrap/dist/js/bootstrap.bundle.min.js";
+import "../src/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js";
+import "../src/vendor/tiny-slider/dist/min/tiny-slider.js";
+import "../src/vendor/jarallax/dist/jarallax.min.js";
+import "../src/vendor/rellax/rellax.min.js";
+import "../src/js/theme.min.js";
 
 import { createApp, h } from "vue";
 import { createInertiaApp } from "@inertiajs/vue3";

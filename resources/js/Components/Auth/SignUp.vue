@@ -54,7 +54,7 @@
                                         </ul>
                                         <img
                                             class="d-block mx-auto"
-                                            src="../../../../public/assets/img/signin-modal/signup-dark.svg"
+                                            src="../../../../public/img/signin-modal/signup-dark.svg"
                                             width="344"
                                             alt="Illustartion"
                                         />

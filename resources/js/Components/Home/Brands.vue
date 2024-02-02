@@ -6,7 +6,7 @@
                     class="opacity-40 opacity-transition d-table mx-auto"
                     href="#"
                     ><img
-                        src="../../../../public/assets/img/car-finder/brands/opel.svg"
+                        src="../../../../public/img/car-finder/brands/opel.svg"
                         width="86"
                         alt="Opel"
                 /></a>
@@ -16,7 +16,7 @@
                     class="opacity-40 opacity-transition d-table mx-auto"
                     href="#"
                     ><img
-                        src="../../../../public/assets/img/car-finder/brands/audi.svg"
+                        src="../../../../public/img/car-finder/brands/audi.svg"
                         width="86"
                         alt="Audi"
                 /></a>
@@ -26,7 +26,7 @@
                     class="opacity-40 opacity-transition d-table mx-auto"
                     href="#"
                     ><img
-                        src="../../../../public/assets/img/car-finder/brands/mercedes.svg"
+                        src="../../../../public/img/car-finder/brands/mercedes.svg"
                         width="86"
                         alt="Mercedes-Benz"
                 /></a>
@@ -36,7 +36,7 @@
                     class="opacity-40 opacity-transition d-table mx-auto"
                     href="#"
                     ><img
-                        src="../../../../public/assets/img/car-finder/brands/toyota.svg"
+                        src="../../../../public/img/car-finder/brands/toyota.svg"
                         width="86"
                         alt="Toyota"
                 /></a>
@@ -46,7 +46,7 @@
                     class="opacity-40 opacity-transition d-table mx-auto"
                     href="#"
                     ><img
-                        src="../../../../public/assets/img/car-finder/brands/mazda.svg"
+                        src="../../../../public/img/car-finder/brands/mazda.svg"
                         width="86"
                         alt="Mazda"
                 /></a>
@@ -56,7 +56,7 @@
                     class="opacity-40 opacity-transition d-table mx-auto"
                     href="#"
                     ><img
-                        src="../../../../public/assets/img/car-finder/brands/nissan.svg"
+                        src="../../../../public/img/car-finder/brands/nissan.svg"
                         width="86"
                         alt="Nissan"
                 /></a>
@@ -66,7 +66,7 @@
                     class="opacity-40 opacity-transition d-table mx-auto"
                     href="#"
                     ><img
-                        src="../../../../public/assets/img/car-finder/brands/hyundai.svg"
+                        src="../../../../public/img/car-finder/brands/hyundai.svg"
                         width="86"
                         alt="Hyundai"
                 /></a>
@@ -76,7 +76,7 @@
                     class="opacity-40 opacity-transition d-table mx-auto"
                     href="#"
                     ><img
-                        src="../../../../public/assets/img/car-finder/brands/lexus.svg"
+                        src="../../../../public/img/car-finder/brands/lexus.svg"
                         width="86"
                         alt="Lexus"
                 /></a>
@@ -86,7 +86,7 @@
                     class="opacity-40 opacity-transition d-table mx-auto"
                     href="#"
                     ><img
-                        src="../../../../public/assets/img/car-finder/brands/honda.svg"
+                        src="../../../../public/img/car-finder/brands/honda.svg"
                         width="86"
                         alt="Honda"
                 /></a>
@@ -96,7 +96,7 @@
                     class="opacity-40 opacity-transition d-table mx-auto"
                     href="#"
                     ><img
-                        src="../../../../public/assets/img/car-finder/brands/renault.svg"
+                        src="../../../../public/img/car-finder/brands/renault.svg"
                         width="86"
                         alt="Renault"
                 /></a>
@@ -106,7 +106,7 @@
                     class="opacity-40 opacity-transition d-table mx-auto"
                     href="#"
                     ><img
-                        src="../../../../public/assets/img/car-finder/brands/infiniti.svg"
+                        src="../../../../public/img/car-finder/brands/infiniti.svg"
                         width="86"
                         alt="Infiniti"
                 /></a>
@@ -116,7 +116,7 @@
                     class="opacity-40 opacity-transition d-table mx-auto"
                     href="#"
                     ><img
-                        src="../../../../public/assets/img/car-finder/brands/mitsubishi.svg"
+                        src="../../../../public/img/car-finder/brands/mitsubishi.svg"
                         width="86"
                         alt="Mitsubishi"
                 /></a>

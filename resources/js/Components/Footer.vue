@@ -6,7 +6,7 @@
             >
                 <a class="d-inline-block" href="real-estate-home-v1.html"
                     ><img
-                        src="../../../public/assets/img/logo/logo-light.svg"
+                        src="../../../public/img/logo/logo-light.svg"
                         width="116"
                         alt="logo"
                 /></a>

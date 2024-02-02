@@ -24,7 +24,7 @@
                             href="car-finder-blog-single.html"
                             ><img
                                 class="d-block"
-                                src="../../../../public/assets/img/car-finder/blog/04.jpg"
+                                src="../../../../public/img/car-finder/blog/04.jpg"
                                 alt="Image"
                         /></a>
                         <div class="py-3">
@@ -45,7 +45,7 @@
                                 href="#"
                                 ><img
                                     class="rounded-circle"
-                                    src="../../../../public/assets/img/avatars/08.jpg"
+                                    src="../../../../public/img/avatars/08.jpg"
                                     width="44"
                                     alt="Avatar"
                                 />
@@ -76,7 +76,7 @@
                             href="car-finder-blog-single.html"
                             ><img
                                 class="d-block"
-                                src="../../../../public/assets/img/car-finder/blog/05.jpg"
+                                src="../../../../public/img/car-finder/blog/05.jpg"
                                 alt="Image"
                         /></a>
                         <div class="py-3">
@@ -98,7 +98,7 @@
                                 href="#"
                                 ><img
                                     class="rounded-circle"
-                                    src="../../../../public/assets/img/avatars/09.jpg"
+                                    src="../../../../public/img/avatars/09.jpg"
                                     width="44"
                                     alt="Avatar"
                                 />
@@ -129,7 +129,7 @@
                             href="car-finder-blog-single.html"
                             ><img
                                 class="d-block"
-                                src="../../../../public/assets/img/car-finder/blog/06.jpg"
+                                src="../../../../public/img/car-finder/blog/06.jpg"
                                 alt="Image"
                         /></a>
                         <div class="py-3">
@@ -151,7 +151,7 @@
                                 href="#"
                                 ><img
                                     class="rounded-circle"
-                                    src="../../../../public/assets/img/avatars/12.jpg"
+                                    src="../../../../public/img/avatars/12.jpg"
                                     width="44"
                                     alt="Avatar"
                                 />

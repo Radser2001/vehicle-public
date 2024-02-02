@@ -25,7 +25,7 @@
                                         </h2>
                                         <img
                                             class="d-block mx-auto"
-                                            src="../../../../public/assets/img/signin-modal/signin-dark.svg"
+                                            src="../../../../public/img/signin-modal/signin-dark.svg"
                                             width="344"
                                             alt="Illustartion"
                                         />

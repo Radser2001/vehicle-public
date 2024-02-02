@@ -60,7 +60,7 @@
                     >
                         <img
                             class="pt-3 mt-5"
-                            src="../../../../public/assets/img/car-finder/home/car.svg"
+                            src="../../../../public/img/car-finder/home/car.svg"
                             alt="Car"
                         />
                     </div>
@@ -68,7 +68,7 @@
                         class="position-absolute top-0 start-50 translate-middle-x h-100 overflow-hidden"
                     >
                         <img
-                            src="../../../../public/assets/img/car-finder/home/road-line.svg"
+                            src="../../../../public/img/car-finder/home/road-line.svg"
                             width="2"
                             alt="Road line"
                         />

@@ -94,7 +94,7 @@
             <div class="col-md-5 col-lg-6">
                 <img
                     class="d-block mx-auto"
-                    src="../../../../public/assets/img/car-finder/home/mobile-app.png"
+                    src="../../../../public/img/car-finder/home/mobile-app.png"
                     width="460"
                     alt="Mobile App"
                 />

@@ -8,7 +8,7 @@
             <a class="navbar-brand me-3 me-xl-4" href="car-finder-home.html"
                 ><img
                     class="d-block"
-                    src="../../../public/assets/img/logo/logo-light.svg"
+                    src="../../../public/img/logo/logo-light.svg"
                     width="116"
                     alt="Finder"
             /></a>

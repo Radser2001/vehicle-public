@@ -1,6 +1,6 @@
-@import url("../../vendor/simplebar/dist/simplebar.min.css");
-@import url("../../vendor/tiny-slider/dist/tiny-slider.css");
-@import url("../../public/assets/css/theme.min.css");
+@import url("../src/vendor/simplebar/dist/simplebar.min.css");
+@import url("../src/vendor/tiny-slider/dist/tiny-slider.css");
+@import url("../src/css/theme.min.css");
 
 
 .page-loading {

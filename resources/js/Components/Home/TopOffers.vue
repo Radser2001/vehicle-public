@@ -48,10 +48,10 @@
                         </div>
                         <div class="tns-carousel-inner">
                             <img
-                                src="../../../../public/assets/img/car-finder/catalog/17.jpg"
+                                src="../../../../public/img/car-finder/catalog/17.jpg"
                                 alt="Image"
                             /><img
-                                src="../../../../public/assets/img/car-finder/catalog/17.jpg"
+                                src="../../../../public/img/car-finder/catalog/17.jpg"
                                 alt="Image"
                             />
                         </div>
@@ -160,13 +160,13 @@
                             <div
                                 class="bg-size-cover bg-position-center w-100 h-100"
                                 style="
-                                    background-image: url(img/car-finder/catalog/09.jpg);
+                                    background-image: url(src/img/car-finder/catalog/09.jpg);
                                 "
                             ></div>
                             <div
                                 class="bg-size-cover bg-position-center w-100 h-100"
                                 style="
-                                    background-image: url(img/car-finder/catalog/09.jpg);
+                                    background-image: url(src/img/car-finder/catalog/09.jpg);
                                 "
                             ></div>
                         </div>
@@ -271,13 +271,13 @@
                             <div
                                 class="bg-size-cover bg-position-center w-100 h-100"
                                 style="
-                                    background-image: url(img/car-finder/catalog/13.jpg);
+                                    background-image: url/img/car-finder/catalog/13.jpg);
                                 "
                             ></div>
                             <div
                                 class="bg-size-cover bg-position-center w-100 h-100"
                                 style="
-                                    background-image: url(img/car-finder/catalog/13.jpg);
+                                    background-image: url/img/car-finder/catalog/13.jpg);
                                 "
                             ></div>
                         </div>
